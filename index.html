@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="javascript/bootstrap/css/bootstrap.min.css">
+  <script src="javascript/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Script -->
+  <script src="javascript/adaptiveCardList.js"></script>
+  <script src="javascript/script.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="stylesheet/stylesheet.css">
+
+</head>
+<body>
+  <!-- <div class="container">
+    <h1>H1 Hello world!</h1>
+    <h2>H2 Hello world!</h2>
+    <h3>H3 Hello world!</h3>
+    <h4>H4 Hello world!</h4>
+    <h5>H5 Hello world!</h5>
+    <h6>H6 Hello world!</h6>
+    <hr>
+    <p>P - Hello world!</p>
+    <span>SPAN - Hello world</span> <br />
+    <small>SMALL - Hello world</small>
+    <hr>
+    <a href="#">Link - Hello world!</a>
+    <hr>
+    <ul>
+      <li>Li - Hello world 1</li>
+      <li><a href="#">Li With links - Hello world 2</a></li>
+      <li>Li - Hello world 3</li>
+      <li>Li - Hello world 4</li>
+      <li>Li - Hello world 5</li>
+    </ul>
+    <hr>
+    <i class="bi bi-phone"></i>
+    <hr>
+
+  </div> -->
+
+
+  <div class="wrapper">
+    <header>
+
+      <div class="container">
+
+        <div class="row align-items-center">
+
+          <div class="col-12 col-md-6 logo_brand">
+            <a href="index.html">
+              <h1>Miraflores</h1>
+            </a>
+          </div>
+          
+          <div class="col-12 col-md-6">
+            <ul class="list-inline">
+
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-phone"></i>
+                </a>
+                <span class="d-none d-md-inline" ><a href="tel:+78000000000">+7 800 000 00 00</a></span>
+              </li>
+
+              <li class="list-inline-item dropdown">
+
+                <a href="#" class="dropdown-toggle" id="navbarAccount" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-person"></i>
+                  <span class="d-none d-md-inline">Личный кабинет</span> 
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="navbarAccount">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-heart"></i>
+                  <span class="d-none d-md-inline">Закладки</span>
+                </a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="cart.html">
+                  <i class="bi bi-cart2"></i>
+                  <span class="d-none d-md-inline">Корзина</span>
+                </a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-arrow-right"></i>
+                  <span class="d-none d-md-inline">Оформление заказа</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-12 col-md-6">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <a href="#">
+                <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row cart align-items-center">
+          <div class="col-12 col-lg-2 mb-1">
+            <button type="button" class="btn btn-outline-primary position-relative w-100">
+              Корзина
+            </button>
+          </div>
+
+          <!-- Category -->
+          <div class="col-12 col-lg-10">
+
+            <a class="btn btn-primary d-block d-lg-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+              Категории
+            </a>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light d-none d-lg-block">
+              <div class="container-fluid">
+  
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="category.html">Какаята категория</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="category.html">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="category.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="category.html">Action</a></li>
+                      <li><a class="dropdown-item" href="category.html">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="category.html">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <div class="container-fluid">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="category.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="category.html">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="category.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="category.html">Action</a></li>
+                          <li><a class="dropdown-item" href="category.html">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="category.html">Something else here</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                      
+                  </div>
+                </nav>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- Category end -->
+
+        </div>
+
+      </div>
+      
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- Новинки -->
+        <div class="row heading_title">
+          <h2>Новинки</h2>
+        </div>
+
+        
+        <div id="card_list" class="card-list">
+          <!-- <div class="row"> -->
+            
+            <!-- First -->
+            <div class="card">
+              <img src="image/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+              <a href="product.html">
+                <h5 class="card-title">Card title</h5>
+              </a>
+                <h3>500.00р</h3>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button id="btn_cart" type="button" class="btn btn-outline-primary">Добавить в корзину</button>
+                  <button type="button" class="btn btn-outline-primary"><i class="bi bi-heart"></i></button>
+                  <button type="button" class="btn btn-outline-primary"><i class="bi bi-arrow-left-right"></i></button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Second -->
+            <div class="card">
+              <img src="image/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <a href="product.html">
+                  <h5 class="card-title">Card title</h5>
+                </a>
+                
+                <h3><small><s>600.00р</s></small>/500.00р</h3>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button id="btn_cart" type="button" class="btn btn-outline-primary">Добавить в корзину</button>
+                  <button type="button" class="btn btn-outline-primary"><i class="bi bi-heart"></i></button>
+                  <button type="button" class="btn btn-outline-primary"><i class="bi bi-arrow-left-right"></i></button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Third -->
+            <div class="card">
+              <img src="image/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <a href="product.html">
+                  <h5 class="card-title">Card title</h5>
+                </a>
+                <h3>500.00р</h3>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button id="btn_cart" type="button" class="btn btn-outline-primary">Добавить в корзину</button>
+                  <button type="button" class="btn btn-outline-primary"><i class="bi bi-heart"></i></button>
+                  <button type="button" class="btn btn-outline-primary"><i class="bi bi-arrow-left-right"></i></button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Four -->
+            <div class="card">
+              <img src="image/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <a href="product.html">
+                  <h5 class="card-title">Card title</h5>
+                </a>
+                
+                <h3><small><s>600.00р</s></small>/500.00р</h3>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button id="btn_cart" type="button" class="btn btn-outline-primary">Добавить в корзину</button>
+                  <button type="button" class="btn btn-outline-primary"><i class="bi bi-heart"></i></button>
+                  <button type="button" class="btn btn-outline-primary"><i class="bi bi-arrow-left-right"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="card">
+              <img src="image/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <a href="product.html">
+                  <h5 class="card-title">Card title</h5>
+                </a>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                
+                <h3><small><s>600.00р</s></small>/500.00р</h3>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button id="btn_cart" type="button" class="btn btn-outline-primary">Добавить в корзину</button>
+                  <button type="button" class="btn btn-outline-primary"><i class="bi bi-heart"></i></button>
+                  <button type="button" class="btn btn-outline-primary"><i class="bi bi-arrow-left-right"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="card">
+              <img src="image/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <a href="product.html">
+                  <h5 class="card-title">Card title</h5>
+                </a>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                
+                <h3><small><s>600.00р</s></small>/500.00р</h3>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button id="btn_cart" type="button" class="btn btn-outline-primary">Добавить в корзину</button>
+                  <button type="button" class="btn btn-outline-primary"><i class="bi bi-heart"></i></button>
+                  <button type="button" class="btn btn-outline-primary"><i class="bi bi-arrow-left-right"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="card">
+              <img src="image/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <a href="product.html">
+                  <h5 class="card-title">Card title</h5>
+                </a>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                
+                <h3><small><s>600.00р</s></small>/500.00р</h3>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button id="btn_cart" type="button" class="btn btn-outline-primary">Добавить в корзину</button>
+                  <button type="button" class="btn btn-outline-primary"><i class="bi bi-heart"></i></button>
+                  <button type="button" class="btn btn-outline-primary"><i class="bi bi-arrow-left-right"></i></button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Новинки end -->
+       
+
+      </div>
+    </main>
+
+    <footer class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 logo_brand">
+            <a href="#">
+              <h1>Miraflores</h1>
+            </a>
+          </div>
+        <div class="row justify-content-center">
+  
+            <div class="col-12 col-sm-6 col-md-3">
+              <h5>Информация</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Информаци о доставке</a></li>
+                <li><a href="#">Lorem, ipsum dolor.</a></li>
+                <li><a href="#">Lorem, ipsum dolor.</a></li>
+              </ul>
+            </div>
+  
+          <div class="col-12 col-sm-6 col-md-3">
+            <h5>Служба поддержки</h5>
+            <ul class="list-unstyled">
+              <li><a href="№">Lorem, ipsum.</a></li>
+              <li><a href="№">Lorem, ipsum.</a></li>
+              <li><a href="№">Lorem, ipsum.</a></li>
+            </ul>
+          </div>
+  
+          
+          <div class="col-12 col-sm-6 col-md-3">
+            <h5>Дополнительно</h5>
+            <ul class="list-unstyled">
+              <li><a href="№">Lorem, ipsum.</a></li>
+              <li><a href="№">Lorem, ipsum.</a></li>
+              <li><a href="№">Lorem, ipsum.</a></li>
+              <li><a href="№">Lorem, ipsum.</a></li>
+              <li><a href="№">Lorem, ipsum.</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-12 col-sm-6 col-md-3">
+            <h5>Аккаунт</h5>
+            <ul class="list-unstyled">
+              <li><a href="№">Lorem, ipsum.</a></li>
+              <li><a href="№">Lorem, ipsum.</a></li>
+              <li><a href="№">Lorem, ipsum.</a></li>
+              <li><a href="№">Lorem, ipsum.</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
